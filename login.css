@@ -1,0 +1,96 @@
+/* Center the entire login form on the page */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  background-color: #fff;
+  width: 360px; /* fixed width */
+  padding: 40px 35px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-left: 530px;
+  margin-top: 20px;
+}
+
+
+/* Login title */
+.container h2 {
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Label styling */
+.container label {
+  font-size: 14px;
+  color: #333;
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+/* Input field styling */
+.user {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+.user:focus {
+  border-color: #6a11cb;
+  outline: none;
+}
+
+/* Button group container */
+.button-group {
+  margin-top: 10px;
+}
+
+/* Common button style */
+.login {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login:hover {
+  opacity: 0.9;
+}
+
+/* Add some spacing for the Sign Up button */
+.container button:last-of-type {
+  margin-top: 10px;
+}
+
+/* Responsive styling for mobile screens */
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+    padding: 25px;
+  }
+
+  .login {
+    font-size: 14px;
+  }
+}
